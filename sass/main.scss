@@ -1,0 +1,230 @@
+
+h1,h2,h3,h4,h5{
+
+	.underlined{
+		margin-bottom: 30px;
+			&:before{
+				content: "";
+				width: 50px;
+				height: 3px;
+				background: #FFFFFF;
+				position: absolute;
+				margin-top: 50px;
+			}
+	}
+
+}
+.left-reset {
+	margin-left: 0 !important;
+}
+.wrapper {
+	width: 100%;
+	height: auto;
+}
+.container{
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.section{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#home{
+	background: url('../img/Biker.jpg') no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+
+
+	.nav-bar-static-top#top-header{
+		background-color:#08bbd1; 
+		
+		.container{
+			color: #FFFFFF;
+			nav{
+
+			}
+
+			.nav{
+				margin-bottom: 10px;
+				margin-top: 10px;
+			}
+			.pull-right{
+
+				div{
+				float:left;
+				}
+				#header-social{
+					margin-left:50px;	
+					li{
+						a{
+							padding:0 2px;
+
+							&:hover{
+							background: inherit;
+							}
+
+							i{
+								margin:0 4px 0 4px;
+							}
+						}
+					}
+				}
+			}
+			i{
+				margin:0 10px 0 10px;
+				color: #FFFFFF;
+			}
+
+		}
+	}
+	#secondary-nav {
+	background: #353a3b;
+	}
+	#hero-content {
+		padding:170px 0;
+		color: #fff;
+
+		h2{
+			margin-bottom: 30px;
+			&:before{
+				content: "";
+				width: 50px;
+				height: 3px;
+				background: #FFFFFF;
+				position: absolute;
+				margin-top: 50px;
+			}
+		}
+	}
+
+	#navigation-tiles{
+		background:#08bbd1;
+
+		.row{
+			margin-left: 0;
+		}
+		.tile{
+			color:#FFFFFF;
+			height: 300px;
+
+			.title-number{
+				padding:15px 6px;
+				background: #18cbe1;
+				width:50px;
+				text-align: center;
+				margin: 0;
+
+				&:before{
+				content: "";
+				width: 20px;
+				height: 5px;
+				background: #08bbd1;
+				position: absolute;
+				margin-top: 40px;
+				}
+			}
+			.inner-padding{
+				padding: 25px;
+			}
+
+
+
+			h4{
+				text-transform: capitalize;
+			}
+			&:nth-child(2){
+					background: #12c4da;
+				}
+				&:nth-child(3){
+					background: #18cbe1;
+				}
+				&:nth-child(4){
+					background: #20d3e9;
+				}
+				&:nth-child(5){
+					background: #34ddf2;
+				}
+		}
+	}
+}
+.carousel-content{
+	menu{
+		background: #FFFFFF !important;
+		top: -40px !important;
+		bottom: auto !important;
+
+		li{
+			display: none;
+			margin-left:15px;
+
+			&:nth-child(2){
+				display:inline-block;
+			}
+			&:last-child{
+				display:inline-block;
+			}
+		}
+	}
+}
+
+#tagbox{
+	text-align: center;
+	background: #e9e9e9;
+	border-top:1 px solid #e3e3e3;
+}
+
+#testimonials{
+	.testimonial{
+
+		.test-content{
+			background: #12c4da;
+			border-radius: 4px;
+			padding: 25px 20px;
+			color: #FFFFFF;
+			margin-bottom: 30px;
+			&:before{
+				content:"";
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 20px 10px 0 10px;
+				border-color: #12c3da transparent transparent transparent;
+				line-height: 0px;
+				_border-color: #12c3da #000000 #000000 #000000;
+				_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+				position: absolute;
+				top: 92px;
+				margin-left:10px;
+
+			}
+
+		}
+		.test-author{
+			.author-name{
+				margin: 0;
+			}
+		}
+	}
+}
+
+.footer{
+	background-color:#08bbd1; 
+	padding: 15px 0;
+	color: #FFFFFF;
+	font-size: 1.2em;
+}
+.span24{
+	width: 20%;
+	margin-left: 0;
+}
+
+@media (min-width: 1200px){
+.container {
+width: 1170px;
+}
+
+}
