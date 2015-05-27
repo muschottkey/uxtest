@@ -1,7 +1,7 @@
 
 h1,h2,h3,h4,h5{
 
-	.underlined{
+	&.underlined{
 		margin-bottom: 30px;
 			&:before{
 				content: "";
@@ -20,12 +20,17 @@ h1,h2,h3,h4,h5{
 .wrapper {
 	width: 100%;
 	height: auto;
+	overflow: hidden;
 }
 .container{
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+img{
+	max-width: 100%;
 }
 
 .section{
@@ -51,6 +56,13 @@ h1,h2,h3,h4,h5{
 			.nav{
 				margin-bottom: 10px;
 				margin-top: 10px;
+
+				li{
+					cursor: pointer;
+					&.nav-list{
+						margin-left:10px;
+					}
+				}
 			}
 			.pull-right{
 
@@ -83,6 +95,26 @@ h1,h2,h3,h4,h5{
 	}
 	#secondary-nav {
 	background: #353a3b;
+
+	.nav-select{
+		background: #FFFFFF;
+		display: inline-block;
+		padding: 15px;
+		width: 200px;
+		margin-top: 11px;
+		&:hover{
+			background:#f4f4f4;
+			i{
+				color:#08BBD1;
+			}
+		}
+		.dropdown-menu{
+
+			&.visible{
+				display: block;
+			}
+		}
+	}
 	}
 	#hero-content {
 		padding:170px 0;
@@ -110,6 +142,7 @@ h1,h2,h3,h4,h5{
 		.tile{
 			color:#FFFFFF;
 			height: 300px;
+			float: left;
 
 			.title-number{
 				padding:15px 6px;
@@ -197,7 +230,7 @@ h1,h2,h3,h4,h5{
 				_border-color: #12c3da #000000 #000000 #000000;
 				_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 				position: absolute;
-				top: 92px;
+				top: 105px;
 				margin-left:10px;
 
 			}

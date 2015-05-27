@@ -72,3 +72,20 @@ YUI().use(
     ).render();
   }
 );
+
+YUI().use(
+  'aui-node',
+  function(Y) {
+    var list = Y.one('#myDropdown');
+    var trigger = Y.one('#customDropdown');
+    var offsetX = trigger.getX();
+    var offsetY = trigger.innerHeight() + trigger.innerHeight();
+
+    trigger.on('click', function(){
+      list.setStyle('top',offsetY);
+      list.setStyle('left',offsetX);
+      list.toggleClass('visible');
+    })
+
+  }
+);
